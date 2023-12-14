@@ -8,12 +8,12 @@ const rl = readline.createInterface({
 async function askName() {
   const name = await rl.question('Please enter your name: ')
   rl.write(`Hello, ${name}!\n`)
+  rl.write('Goodbye!\n')
+  rl.close()
 }
 
 async function start() {
-  while (true) {
-    await askName()
-  }
+  askName()
 }
 
 start()
