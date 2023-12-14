@@ -5,15 +5,11 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-async function askName() {
+async function start() {
   const name = await rl.question('Please enter your name: ')
   rl.write(`Hello, ${name}!\n`)
   rl.write('Goodbye!\n')
   rl.close()
-}
-
-async function start() {
-  askName()
 }
 
 start()
