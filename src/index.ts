@@ -1,4 +1,5 @@
 import * as readline from 'node:readline/promises'
+import _ from 'lodash'
 
 const rl = readline.createInterface({
   input: process.stdin,
